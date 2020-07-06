@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:elevation="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/person"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/farmerName"
+            android:layout_toRightOf="@id/imgIcon"
+            android:text="Farmer Name"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

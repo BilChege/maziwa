@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.netrix.ngorika.UnsentRecords"
+    tools:showIn="@layout/activity_unsent_records">
+    <TextView
+        android:id="@android:id/empty"
+        style="@style/Fill_Wrap"
+        android:gravity="center"
+        android:text="@string/activity_form_failed"
+        android:textColor="#000"
+        android:textSize="@dimen/addrec_failed"
+
+         />
+    <ListView
+        android:layout_below="@android:id/empty"
+        android:id="@+id/list_records"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/list_height"
+        android:fadingEdge="none"
+        android:smoothScrollbar="true" />
+</RelativeLayout>

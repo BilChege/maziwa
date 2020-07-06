@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Anchor Maziwa</string>
+    <string name="farmer_info">Farmer Information</string>
+    <string name="hello_world">Zones...</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinner_title">Routes</string>
+    <string name="title_activity_settings">Milk Collection</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Routes</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">TOWN</string>
+
+    <string name="pref_title_add_friends_to_messages">Select Route</string>
+
+    <string name="searchForFarmer">Enter Farmer Code</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+    <string name="getWeight">Capture Weight</string>
+    <string name="secure_connect">Cached Records</string>
+    <string name="title_activity_cached_records">CachedRecordsActivity</string>
+    <string name="username">Username</string>
+    <string name="activity_login_password">Password</string>
+    <string name="activity_login_">Login</string>
+    <string name="title_activity_unsent_records">UnsentRecords</string>
+    <string name="activity_form_failed">No Unsent Records</string>
+    <string name="upload">Upload</string>
+</resources>

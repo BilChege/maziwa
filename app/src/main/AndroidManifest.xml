@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.netrix.ngorika">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".NgorikaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/milkicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MaterialRequisition"
+            android:label="Material Requisition"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MilkWeightActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SetUpActivity"
+            android:label="@string/title_activity_set_up"
+            android:theme="@style/AppTheme.Dar" />
+        <activity
+            android:name=".CachedRecordsActivity"
+            android:label="@string/title_activity_cached_records"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.netrix.ngorika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoadFarmersActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service
+            android:name=".services.ServiceRequests"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".UnsentRecords"
+            android:label="@string/title_activity_unsent_records"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.netrix.ngorika.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

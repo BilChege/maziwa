@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:capp="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/secure_connect_scan"
+        android:icon="@mipmap/ic_action_device_access_bluetooth_searching"
+        capp:showAsAction="never"
+        android:title="@string/secure_connect"/>
+</menu>

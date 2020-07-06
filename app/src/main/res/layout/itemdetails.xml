@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description : "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtItemDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Price : "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtItemPrice"
+        android:layout_below="@id/txtItemDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Quantity : "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtItemQuantity"
+        android:layout_below="@id/txtItemPrice"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemQuantity"
+        android:layout_margin="20dp"
+        android:hint="Specify quantity"
+        android:id="@+id/tlSpQty">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:id="@+id/itmQty"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlSpQty"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/tlTotal"
+        android:hint="Total">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/total"
+            android:enabled="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tlTotal"
+        android:layout_margin="20dp"
+        android:text="Add Item"
+        android:id="@+id/btnAddItem"/>
+
+</RelativeLayout>

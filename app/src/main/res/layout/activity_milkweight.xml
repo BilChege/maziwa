@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:magic="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_main_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="353dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/milk" />
+
+            <app.netrix.ngorika.views.MagicTextView
+                android:textColor="@color/black"
+                android:id="@+id/labelinformation"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:paddingTop="@dimen/vertical_page_margin"
+                android:textSize="15sp" />
+
+
+            <app.netrix.ngorika.views.MagicTextView
+                xmlns:magic="http://schemas.android.com/apk/res-auto"
+                android:textColor="@color/black"
+                android:id="@+id/label"
+                style="@style/Widget.SampleMessage"
+                android:gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/horizontal_page_margin"
+                android:paddingRight="@dimen/horizontal_page_margin"
+                android:paddingTop="@dimen/vertical_page_margin"
+                android:paddingBottom="@dimen/vertical_page_margin"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                style="@style/search_style"
+                android:hint="enter weight"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:id="@+id/etWeight"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxes"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="2">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/peroxide"
+                    android:text="Peroxide"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alcohal"
+                    android:text="Alcohal"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/milkCans"
+                style="@style/search_style"
+                magic:hintText="Search milk can"/>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/workShift"
+                magic:ms_multiline="false"
+                style="@style/search_style"
+                android:layout_marginHorizontal="10dp"
+                magic:ms_enableFloatingLabel="true"
+                magic:ms_floatingLabelText="Work Shift"
+                magic:ms_hint="Select Work Shift" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Read Data" />
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read Weight" />
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Data"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
